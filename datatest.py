@@ -11,9 +11,9 @@ import matplotlib.pyplot as plt
 from scipy.stats import skewnorm
 
 # Define the parameters for the skew normal distribution
-alpha = -1.5  # Adjust this parameter for different levels of skewness
-loc = 7 # Mean
-scale = 0.95   # Standard deviation
+alpha = 10  # Adjust this parameter for different levels of skewness
+loc = 1 # Mean
+scale = 0.5   # Standard deviation
 num_samples = 20000
 down_bound = 0
 up_bound = 10

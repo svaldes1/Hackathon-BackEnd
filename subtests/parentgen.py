@@ -94,14 +94,14 @@ df = generateSkewSample(0, 0.5, 0.16, 5000, 'Tech_Sav', df)
 df = generateSkewSample(2, 27.5, 8, 5000, 'Age', df)
 df = generateSkewSample(0, 6, 2, 5000, 'Time_Cust', df)
 df = generateSkewSample(0, 5, 1.5, 5000, 'Satisfaction', df)
-df = generateSkewSample(5, 1, 0.5, 5000, 'House_Size', df)
-df = generateSkewSample(10, 1, 0.6, 5000, 'Latest_Plan', df)
+df = generateSkewSample(-2, 4, 1, 5000, 'House_Size', df)
+df = generateSkewSample(0, 2, 0.5, 5000, 'Latest_Plan', df)
 test = product_funct(0.5, 0.4, 0.1, df)
 print(test)
 test2 = accessory_funct(0.25, 0.25, 0.05, df)
 print(test2)
-df = generateSkewSample(0, 5, 2, 5000, 'Phone_Plan', df)
-df = generateSkewSample(0, 5, 1, 5000, 'Home_Plan', df)
+df = generateSkewSample(0, 6.5, 2, 5000, 'Phone_Plan', df)
+df = generateSkewSample(0, 7, 1.5, 5000, 'Home_Plan', df)
 
 
 # Isolate values outside of range
@@ -122,5 +122,3 @@ df.loc[df['Home_Plan'] > 10, 'Home_Plan'] = 10
 
 # export df to csv
 df.to_csv('parentdata.csv', index=False)
-
-
